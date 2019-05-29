@@ -11,8 +11,8 @@
     <modules>
         <module>uebung1</module>
         <module>uebung2</module>
+        <module>uebung3</module>
     </modules>
-
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>

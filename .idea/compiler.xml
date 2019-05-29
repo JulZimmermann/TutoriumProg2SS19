@@ -8,12 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="uebung1" />
         <module name="uebung2" />
+        <module name="uebung3" />
+        <module name="uebung4" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="uebung1 (1)" target="1.5" />
-      <module name="uebung3" target="1.8" />
-      <module name="uebung4" target="1.8" />
       <module name="uebung5" target="1.8" />
       <module name="uebung6" target="1.8" />
       <module name="uebung7" target="1.8" />
