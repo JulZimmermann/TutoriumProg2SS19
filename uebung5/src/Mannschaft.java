@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 import java.util.OptionalDouble;
 
-public class Mannschaft {
+public class Mannschaft implements Comparable<Mannschaft> {
+
     private String name;
     private ArrayList<Spieler> spielerList = new ArrayList<>();
 
@@ -60,6 +61,19 @@ public class Mannschaft {
         stringBuilder.append(String.format("Durchschnittsranking: %s%n", getDurchschnittsRanking()));
 
         return stringBuilder.toString();
+    }
+
+    @Override
+    public int compareTo(Mannschaft o) {
+        if(this.getDurchschnittsRanking() > o.getDurchschnittsRanking()) {
+            return -1;
+        }
+
+        if(this.getDurchschnittsRanking() < o.getDurchschnittsRanking()) {
+            return 1;
+        }
+
+        return 0;
     }
 }
 

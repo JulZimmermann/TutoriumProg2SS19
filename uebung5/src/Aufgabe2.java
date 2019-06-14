@@ -6,7 +6,24 @@ public class Aufgabe2 {
     public static void main(String[] args) {
         Map<String, Mannschaft> map = createMap();
 
-        // TODO: Sortiere die Mannschaften und Spieler
+        List<Mannschaft> manschaften = new ArrayList<Mannschaft>(map.values());
+
+        Collections.sort(manschaften);
+
+        int i = 1;
+        for(Mannschaft mannschaft : manschaften) {
+            System.out.printf("%d. %s (%.2f)%n", i, mannschaft.getName(), mannschaft.getDurchschnittsRanking());
+
+            List<Spieler> spielerList = mannschaft.getSpielerList();
+
+            spielerList.sort((a, b) -> b.getName().compareTo(a.getName()));
+
+            for(Spieler spieler : spielerList) {
+                System.out.printf("\t%s mit Ranking %d%n", spieler.getName(), spieler.getRanking());
+            }
+
+            i++;
+        }
 
     }
 
