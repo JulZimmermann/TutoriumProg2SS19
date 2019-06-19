@@ -52,28 +52,20 @@ public class Mannschaft implements Comparable<Mannschaft> {
 
     @Override
     public String toString() {
-        StringBuilder stringBuilder = new StringBuilder();
+        String string = "";
 
         for(Spieler spieler : getSpielerList()) {
-            stringBuilder.append(String.format("%s%n", spieler.toString()));
+            string += spieler.toString() + "\n";
         }
 
-        stringBuilder.append(String.format("Durchschnittsranking: %s%n", getDurchschnittsRanking()));
+        string += "Durchschnittsranking: " + getDurchschnittsRanking() + "\n";
 
-        return stringBuilder.toString();
+        return string;
     }
 
     @Override
     public int compareTo(Mannschaft o) {
-        if(this.getDurchschnittsRanking() > o.getDurchschnittsRanking()) {
-            return -1;
-        }
-
-        if(this.getDurchschnittsRanking() < o.getDurchschnittsRanking()) {
-            return 1;
-        }
-
-        return 0;
+        return (int) (this.getDurchschnittsRanking() - o.getDurchschnittsRanking());
     }
 }
 

@@ -6,7 +6,7 @@ public class Aufgabe2 {
     public static void main(String[] args) {
         Map<String, Mannschaft> map = createMap();
 
-        List<Mannschaft> manschaften = new ArrayList<Mannschaft>(map.values());
+        ArrayList<Mannschaft> manschaften = new ArrayList<>(map.values());
 
         Collections.sort(manschaften);
 
