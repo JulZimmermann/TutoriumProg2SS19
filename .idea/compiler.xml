@@ -6,17 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="uebung1" />
-        <module name="uebung2" />
-        <module name="uebung3" />
-        <module name="uebung4" />
-        <module name="uebung5" />
         <module name="uebung6" />
+        <module name="uebung5" />
+        <module name="uebung4" />
+        <module name="uebung3" />
+        <module name="uebung2" />
+        <module name="uebung1" />
+        <module name="uebung7" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="uebung1 (1)" target="1.5" />
-      <module name="uebung7" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
